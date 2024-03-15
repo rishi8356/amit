@@ -1,0 +1,11 @@
+Book2 <- read.csv(file.choose(), sep = ",",header = TRUE)
+Book2
+
+print("a)least-squares regression line of Y on X")
+reg<-lm(Y ~ X,data=Book2)
+reg
+
+
+print("b)least-squares regression line of X on Y")
+reg<-lm(X ~ Y,data=Book2)
+reg
