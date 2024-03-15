@@ -1,0 +1,8 @@
+my_data <- read.csv(file.choose(), sep = ",",header = TRUE)
+my_data
+
+sd_a <- sd(my_data$a)
+sd_a
+
+Var_a <- var(my_data$a)
+Var_a
