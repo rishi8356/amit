@@ -1,0 +1,41 @@
+Mat_A <- matrix(c(1,2,-1,3,4,5,-6,2,5),nrow = 3,byrow = TRUE)
+Mat_A
+
+Mat_B <- matrix(c(1,2,-1,-3,4,-5,-6,2,5),nrow = 3,byrow = FALSE)
+Mat_B
+
+
+# a.add two matricses A and B
+
+Add_AB <- Mat_A + Mat_B
+Add_AB
+
+#b. Multiply the two matrices
+mul_AB <- Mat_A %*% Mat_B
+mul_AB
+
+#c.FIND THE INVERSE MATRICS OF A
+inv_A <- solve(Mat_A)
+inv_A
+
+#d. INVERSE OF MATRIX B
+inv_B <- solve(Mat_B)
+inv_B
+
+
+#e.FIND THE DETERINANT OF MATRIX A
+det_a <- det(Mat_A)
+det_a
+
+
+#f.FIND THE DETERMINANT OF MATRIX B
+det_b <- det(Mat_B)
+det_b
+
+#g.TRANSPOSE OF MATRIX A
+transpose_of_matrix_A <- t(Mat_A)
+transpose_of_matrix_A
+
+#h.TRANSPOSE OF MATRIX B
+transpose_of_matrix_B <- t(Mat_B)
+transpose_of_matrix_B
