@@ -1,0 +1,10 @@
+Book2<-read.csv(file.choose(),sep= ",", header=TRUE )
+View(Book2)
+result<-chisq.test(Book2)
+result
+if(result$p.value>0.05)
+  {
+  print("ACCEPT BUSINESS OWNERS PREDICTION")
+}else{
+  print("REJECT BUSINESS OWNERS PREDICTION")
+}
