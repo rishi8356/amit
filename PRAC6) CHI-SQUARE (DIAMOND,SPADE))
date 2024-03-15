@@ -1,5 +1,5 @@
 Book2<-read.csv(file.choose(),sep= ",", header=TRUE )
-Book2
+View(Book2)
 result<-chisq.test(Book2)
 result
 if(result$p.value>0.05){
